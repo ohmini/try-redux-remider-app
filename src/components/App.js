@@ -1,14 +1,16 @@
 import React, { PureComponent } from 'react'
 
 import Header from './Header'
-import InputRemider from './InputRemider'
+import InputReminder from './InputReminder'
+import Card from './Card'
 
 class App extends PureComponent {
   render(){
     return (
       <section>
         <Header />
-        <InputRemider />
+        <InputReminder />
+        <Card />
       </section>
     )
   }
