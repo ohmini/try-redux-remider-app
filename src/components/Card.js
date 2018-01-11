@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 
 import DeleteButton from './DeleteButton'
 
-class Card extends Component {
+class Card extends PureComponent {
 
   render(){
     const { reminders } = this.props
