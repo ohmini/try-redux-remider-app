@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
+import DeleteButton from './DeleteButton'
+
 class Card extends Component {
 
   render(){
@@ -13,7 +15,7 @@ class Card extends Component {
             return(
             <div key={reminder.id} className="column is-3">
               <div className="notification is-info">
-                <button className="delete"></button>
+              <DeleteButton cardId={reminder.id} />
                 {reminder.text}
               </div>
             </div>

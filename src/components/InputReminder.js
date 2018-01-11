@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { connect } from 'react-redux'
 
 import { addReminder } from '../actions'
+import ClearButton from './ClearButton'
 
 const AddButton = styled.button`
   margin-top: 20px;
@@ -35,6 +36,7 @@ class InputReminder extends Component {
               <AddButton className="button is-info"
               onClick={this.addReminder}
               >Add Remider</AddButton>
+              <ClearButton />
             </div>
           </div>
         </div>
